@@ -293,7 +293,8 @@ existing site. None of it should be published as-is. The list:
 | Products | `[Add MOQ]` on all 12 product cards |
 | Contact + footers | Real email address, street address, PIN code, working hours |
 | Contact — map | Google Maps embed link from your own business listing |
-| All pages | Real photographs in place of the generated placeholder images |
+| Products | Real product photos — the 12 cards currently use brand-style **illustrations**, not photographs of your make |
+| Gallery, Manufacturing, About | Real photographs in place of the generated placeholder images |
 | PDF | The real catalogue file |
 
 No certifications, capacity figures, client names or awards have been invented anywhere in

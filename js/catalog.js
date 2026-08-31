@@ -34,7 +34,7 @@
       fabric: '320 GSM fleece',
       moq: '[Add MOQ]',
       image: 'assets/images/product-1.svg',
-      alt: 'Heavy 320 GSM pullover hoodie',
+      alt: 'Illustration of a heavy 320 GSM pullover hoodie in navy',
       desc: 'Structured winter-weight pullover hoodie with kangaroo pocket and ribbed cuffs.'
     },
     {
@@ -45,7 +45,7 @@
       fabric: 'Two-thread fleece',
       moq: '[Add MOQ]',
       image: 'assets/images/product-2.svg',
-      alt: 'Two-thread fleece hoodie with drawcord hood',
+      alt: 'Illustration of a two-thread fleece hoodie in off-white',
       desc: 'Mid-weight everyday hoodie in a softer two-thread fleece construction.'
     },
     {
@@ -56,7 +56,7 @@
       fabric: 'Sherpa / Russian fleece',
       moq: '[Add MOQ]',
       image: 'assets/images/product-3.svg',
-      alt: 'Sherpa-lined hooded jacket',
+      alt: 'Illustration of a sherpa-lined hoodie in amber with a cream hood',
       desc: 'Warm sherpa or Russian fleece lining for cold-weather export programmes.'
     },
     {
@@ -67,7 +67,7 @@
       fabric: 'Spun fleece',
       moq: '[Add MOQ]',
       image: 'assets/images/product-4.svg',
-      alt: 'Plain round-neck spun fleece sweatshirt',
+      alt: 'Illustration of a round-neck spun fleece sweatshirt in grey',
       desc: 'Classic crew-neck sweatshirt, an easy base for printed or embroidered branding.'
     },
     {
@@ -78,7 +78,7 @@
       fabric: 'Dry-fit polyester',
       moq: '[Add MOQ]',
       image: 'assets/images/product-5.svg',
-      alt: 'Moisture-wicking dry-fit sports t-shirt',
+      alt: 'Illustration of a dry-fit sports t-shirt in navy',
       desc: 'Moisture-wicking knit built for training kits, teamwear and event merchandise.'
     },
     {
@@ -89,7 +89,7 @@
       fabric: 'Cotton lycra',
       moq: '[Add MOQ]',
       image: 'assets/images/product-6.svg',
-      alt: 'Cotton lycra round-neck t-shirt',
+      alt: 'Illustration of a cotton lycra t-shirt in off-white',
       desc: 'Soft-handle cotton lycra with good recovery — a strong everyday retail staple.'
     },
     {
@@ -100,7 +100,7 @@
       fabric: 'Honeycomb lycra',
       moq: '[Add MOQ]',
       image: 'assets/images/product-7.svg',
-      alt: 'Honeycomb knit polo t-shirt with collar',
+      alt: 'Illustration of a honeycomb knit polo t-shirt in amber',
       desc: 'Collared polo in honeycomb knit for corporate, institutional and retail orders.'
     },
     {
@@ -111,7 +111,7 @@
       fabric: 'NS bonded / dry-fit',
       moq: '[Add MOQ]',
       image: 'assets/images/product-8.svg',
-      alt: 'Athletic track pant with side pockets',
+      alt: 'Illustration of a straight-fit track pant in navy',
       desc: 'Straight-fit track pant with side pockets and elasticated waist with drawcord.'
     },
     {
@@ -122,7 +122,7 @@
       fabric: 'Spun fleece',
       moq: '[Add MOQ]',
       image: 'assets/images/product-9.svg',
-      alt: 'Cuffed jogger lower in fleece',
+      alt: 'Illustration of a cuffed jogger lower in charcoal',
       desc: 'Cuffed jogger with a tapered leg — our most repeated bottom-wear style.'
     },
     {
@@ -133,7 +133,7 @@
       fabric: 'Dry-fit polyester',
       moq: '[Add MOQ]',
       image: 'assets/images/product-10.svg',
-      alt: 'Breathable dry-fit sports shorts',
+      alt: 'Illustration of dry-fit sports shorts in amber',
       desc: 'Lightweight breathable shorts for training, gym and summer teamwear.'
     },
     {
@@ -144,7 +144,7 @@
       fabric: 'Cotton / poly blend',
       moq: '[Add MOQ]',
       image: 'assets/images/product-11.svg',
-      alt: 'Knee-length knitted nikkar',
+      alt: 'Illustration of a knee-length knitted nikkar in off-white',
       desc: 'Knee-length knitted shorts for domestic wholesale and value retail lines.'
     },
     {
@@ -155,7 +155,7 @@
       fabric: 'Cotton lycra',
       moq: '[Add MOQ]',
       image: 'assets/images/product-12.svg',
-      alt: 'Three-quarter length knitted capri',
+      alt: 'Illustration of a three-quarter length capri in navy',
       desc: 'Three-quarter length bottom with a comfortable stretch waistband.'
     }
   ];
