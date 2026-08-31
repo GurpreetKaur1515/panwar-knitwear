@@ -24,6 +24,41 @@ To deploy, upload the whole folder as-is. `index.html` must sit at the root.
 
 ---
 
+## Deployment (Vercel)
+
+The site is live at **https://panwar-knitwear-eta.vercel.app**
+(project `panwar-knitwear`, dashboard:
+<https://vercel.com/gurpreetkaur15151-3771/panwar-knitwear>).
+
+There is no build step — Vercel serves the files as they are. `vercel.json` sets cache
+headers for `/assets`, `/css` and `/js` plus two security headers.
+
+To redeploy after editing content:
+
+```bash
+vercel deploy --prod
+```
+
+Preview (a throwaway URL, does not touch the live site):
+
+```bash
+vercel deploy
+```
+
+Two things to know:
+
+- **`robots.txt` currently blocks all search engines** (`Disallow: /`) because the site is
+  full of placeholder copy. **Delete `robots.txt` when the real content is in**, otherwise
+  Google will never index the site.
+- The first deployment of a new Vercel project always becomes production, whatever flags
+  are passed — so this URL is publicly reachable by anyone who has it. To restrict it while
+  the content is being finished, turn on **Settings → Deployment Protection → Vercel
+  Authentication** in the dashboard; then only people logged into your Vercel account can
+  view it.
+
+To connect a custom domain (e.g. panwarknitwear.com), use **Settings → Domains** in the
+dashboard and follow the DNS instructions it gives you.
+
 ## File structure
 
 ```
