@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Manufacturing &amp; Capabilities — Panwar Knitwear</title>
+  <meta name="description" content="Knitting, dyeing, cutting, stitching, printing, embroidery and quality checking under one roof at Panwar Knitwear, Ludhiana. Fabrics, processes and private-label capabilities.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script>
+    /* Applies a saved theme choice before first paint so the page never flashes. */
+    (function () {
+      try {
+        var saved = localStorage.getItem('pk-theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/images/logo.svg" alt="" width="40" height="40">
+        <span class="brand__name">Panwar Knitwear
+          <span class="brand__tagline">Manufacturer &amp; exporter</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="about.html">About</a></li>
+          <li><a class="site-nav__link" href="manufacturing.html" aria-current="page">Manufacturing</a></li>
+          <li><a class="site-nav__link" href="products.html">Products</a></li>
+          <li><a class="site-nav__link" href="gallery.html">Gallery</a></li>
+          <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+          <li class="site-nav__cta"><a class="btn btn--primary" href="contact.html#inquiry">Request a quote</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"
+                title="Switch to dark theme">
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/>
+          </svg>
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/>
+          </svg>
+          <span class="visually-hidden" data-theme-toggle-label>Switch to dark theme</span>
+        </button>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+          <span class="nav-toggle__label">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Manufacturing</li>
+          </ol>
+        </nav>
+        <h1>From yarn to packed carton, in one unit.</h1>
+        <p>Knitting, dyeing and finishing, cutting, stitching, printing, embroidery, checking and
+          packing are coordinated in-house — which is what keeps quality and delivery dates
+          predictable across a bulk order.</p>
+      </div>
+    </section>
+
+    <!-- ============================== Process =============================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="eyebrow">Process</span>
+          <h2>Six stages every order passes through</h2>
+          <p class="lead">Each stage has a sign-off before the order moves forward, so a problem is
+            caught at the stage it happened rather than at final packing.</p>
+        </div>
+
+        <ol class="steps grid grid--3">
+          <li data-animate>
+            <article class="step">
+              <img src="assets/images/process-1.svg" alt="Circular knitting machines producing fabric"
+                   width="1000" height="750" loading="lazy">
+              <span class="step__number"></span>
+              <h3>Knitting</h3>
+              <p class="card__text">Fabric knitted to the GSM and construction approved on your
+                sample — fleece, terry, single jersey, honeycomb and more.</p>
+            </article>
+          </li>
+          <li data-animate data-animate-delay="1">
+            <article class="step">
+              <img src="assets/images/process-2.svg" alt="Fabric being dyed and finished"
+                   width="1000" height="750" loading="lazy">
+              <span class="step__number"></span>
+              <h3>Dyeing &amp; finishing</h3>
+              <p class="card__text">Shade matched against an approved swatch, then finished for
+                handle, shrinkage and colour fastness.</p>
+            </article>
+          </li>
+          <li data-animate data-animate-delay="2">
+            <article class="step">
+              <img src="assets/images/process-3.svg" alt="Fabric layers being cut to pattern"
+                   width="1000" height="750" loading="lazy">
+              <span class="step__number"></span>
+              <h3>Cutting</h3>
+              <p class="card__text">Layered and cut to the graded pattern, with panels bundled by
+                size to keep shade and measurement consistent.</p>
+            </article>
+          </li>
+          <li data-animate>
+            <article class="step">
+              <img src="assets/images/process-4.svg" alt="Operators stitching garments on the line"
+                   width="1000" height="750" loading="lazy">
+              <span class="step__number"></span>
+              <h3>Stitching</h3>
+              <p class="card__text">Assembly on a line set up for the style, with inline checks on
+                seams, cuffs, hoods and waistbands.</p>
+            </article>
+          </li>
+          <li data-animate data-animate-delay="1">
+            <article class="step">
+              <img src="assets/images/process-5.svg" alt="Printing and embroidery being applied to garments"
+                   width="1000" height="750" loading="lazy">
+              <span class="step__number"></span>
+              <h3>Printing &amp; embroidery</h3>
+              <p class="card__text">Your artwork applied in-house — placement, size and wash
+                durability confirmed on a sample first.</p>
+            </article>
+          </li>
+          <li data-animate data-animate-delay="2">
+            <article class="step">
+              <img src="assets/images/process-6.svg" alt="Finished garments being checked and packed"
+                   width="1000" height="750" loading="lazy">
+              <span class="step__number"></span>
+              <h3>Checking &amp; packing</h3>
+              <p class="card__text">Measurement, finish and trims checked against spec, then packed
+                and labelled to your ratio and carton marking.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================== Fabrics =============================== -->
+    <section class="section section--surface">
+      <div class="container">
+        <div class="split">
+          <div data-animate>
+            <span class="eyebrow">Materials</span>
+            <h2>Fabrics we work with every day</h2>
+            <p class="muted">We will suggest the construction that fits your price point and end use
+              rather than pushing one fabric for everything.</p>
+            <div class="tag-row" style="margin-top:1.5rem;">
+              <span class="badge badge--navy">Spun fleece</span>
+              <span class="badge badge--navy">Russian fleece</span>
+              <span class="badge badge--navy">Sherpa</span>
+              <span class="badge badge--navy">Two-thread fleece</span>
+              <span class="badge badge--navy">100% cotton</span>
+              <span class="badge badge--navy">Cotton lycra</span>
+              <span class="badge badge--navy">Honeycomb lycra</span>
+              <span class="badge badge--navy">Dry-fit</span>
+              <span class="badge badge--navy">NS bonded</span>
+            </div>
+          </div>
+          <div data-animate data-animate-delay="1">
+            <dl class="spec-list">
+              <div>
+                <dt>Winter top wear</dt>
+                <dd>Spun, Russian and two-thread fleece; sherpa lining for heavier programmes.</dd>
+              </div>
+              <div>
+                <dt>Summer top wear</dt>
+                <dd>100% cotton, cotton lycra and honeycomb lycra for tees and polos.</dd>
+              </div>
+              <div>
+                <dt>Activewear</dt>
+                <dd>Dry-fit knits chosen for moisture-wicking and breathability.</dd>
+              </div>
+              <div>
+                <dt>Bottom wear</dt>
+                <dd>NS bonded and fleece constructions for track pants, joggers and lowers.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ Capabilities ============================ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="eyebrow">Capabilities</span>
+          <h2>What we can take on</h2>
+        </div>
+        <dl class="spec-list" data-animate>
+          <div>
+            <dt>Monthly capacity</dt>
+            <dd>[Add pieces per month, and how it splits between top wear and bottom wear.]</dd>
+          </div>
+          <div>
+            <dt>Machinery</dt>
+            <dd>[List knitting, stitching, flatlock, overlock, printing and embroidery machine counts.]</dd>
+          </div>
+          <div>
+            <dt>Minimum order quantity</dt>
+            <dd>[Add MOQ per style and per colour.]</dd>
+          </div>
+          <div>
+            <dt>Lead time</dt>
+            <dd>[Add typical sampling and bulk lead times in days.]</dd>
+          </div>
+          <div>
+            <dt>Size range</dt>
+            <dd>[Add the size range you grade to — for example S–XXL, and kids sizes if offered.]</dd>
+          </div>
+          <div>
+            <dt>Private label</dt>
+            <dd>Woven and printed labels, hang tags, poly bags and carton marking to your
+              specification.</dd>
+          </div>
+          <div>
+            <dt>Markets served</dt>
+            <dd>Domestic wholesale across India, plus export orders. [Add the countries you have
+              shipped to.]</dd>
+          </div>
+        </dl>
+        <p class="placeholder-note"><strong>Fill these in before launch.</strong> The bracketed rows
+          are the details B2B buyers screen on first — a quote request usually follows within
+          minutes of them being answered.</p>
+      </div>
+    </section>
+
+    <!-- =============================== Quality ============================== -->
+    <section class="section section--inverse">
+      <div class="container">
+        <div class="split">
+          <div data-animate>
+            <span class="eyebrow">Quality</span>
+            <h2>Checked at the stage it is made, not only at the end.</h2>
+            <p class="lead">Fabric is inspected on arrival, panels are checked after cutting, seams
+              are checked on the line, and finished pieces are measured against the approved spec
+              before packing.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="contact.html#inquiry">Discuss your requirement</a>
+              <a class="btn btn--ghost" href="gallery.html">See the floor</a>
+            </div>
+          </div>
+          <div class="stats split__media" data-animate data-animate-delay="1">
+            <div class="stat">
+              <span class="stat__value">4</span>
+              <span class="stat__label">Checkpoints between fabric and carton</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">[AQL]</span>
+              <span class="stat__label">Inspection standard applied on final checking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img class="brand__mark" src="assets/images/logo-light.svg" alt="" width="40" height="40">
+            <span class="brand__name">Panwar Knitwear
+              <span class="brand__tagline">Manufacturer &amp; exporter</span>
+            </span>
+          </a>
+          <p style="margin-top:1rem;">Knitwear manufacturing from Ludhiana, Punjab — home to the
+            ZONIXA and MSP Sports brands.</p>
+        </div>
+        <nav aria-labelledby="footer-nav-heading">
+          <h2 id="footer-nav-heading">Company</h2>
+          <ul class="footer-list">
+            <li><a href="about.html">About us</a></li>
+            <li><a href="manufacturing.html">Manufacturing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="footer-products-heading">
+          <h2 id="footer-products-heading">Products</h2>
+          <ul class="footer-list">
+            <li><a href="products.html?category=hoodies">Hoodies</a></li>
+            <li><a href="products.html?category=sweatshirts">Sweatshirts</a></li>
+            <li><a href="products.html?category=tshirts">T-shirts</a></li>
+            <li><a href="products.html?category=bottoms">Track pants &amp; lowers</a></li>
+            <li><a href="products.html?category=shorts">Shorts &amp; nikkar</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Get in touch</h2>
+          <ul class="footer-list">
+            <li><a href="tel:+919876045457">+91 98760 45457</a></li>
+            <li><a href="tel:+919815703769">+91 98157 03769</a></li>
+            <li><a href="mailto:add-real-email@panwarknitwear.com">[add-real-email@panwarknitwear.com]</a></li>
+            <li>[Street address], Ludhiana,<br>Punjab [PIN], India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-current-year>2026</span> Panwar Knitwear. All rights reserved.</p>
+        <p>ZONIXA · MSP Sports</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" href="https://wa.me/919876045457?text=Hello%20Panwar%20Knitwear%2C%20I%20would%20like%20a%20quotation."
+     target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+    <span class="whatsapp-fab__label">WhatsApp</span>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
