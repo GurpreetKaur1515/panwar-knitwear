@@ -1,16 +1,115 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Factory floor / hero placeholder image">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000"
+     role="img" aria-label="Illustration of a knitted hoodie and track pant in the Panwar Knitwear brand colours">
   <defs>
-    <pattern id="knit" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <path d="M0 12h24M12 0v24" stroke="#F5F2EC" stroke-opacity="0.10" stroke-width="2"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e2038"/>
+      <stop offset="55%" stop-color="#0a1a2e"/>
+      <stop offset="100%" stop-color="#071427"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#c8912b" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#c8912b" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- interlocking loops = knit structure -->
+    <pattern id="knit" width="40" height="34" patternUnits="userSpaceOnUse">
+      <path d="M0 17c5-14 15-14 20 0 5 14 15 14 20 0" fill="none" stroke="#0e2038" stroke-opacity="0.22" stroke-width="3"/>
+      <path d="M-20 34c5-14 15-14 20 0 5 14 15 14 20 0" fill="none" stroke="#0e2038" stroke-opacity="0.14" stroke-width="3"/>
+      <path d="M20 34c5-14 15-14 20 0" fill="none" stroke="#0e2038" stroke-opacity="0.14" stroke-width="3"/>
     </pattern>
-    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0E2038"/>
-      <stop offset="100%" stop-color="#C8912B" stop-opacity="0.35"/>
+
+    <pattern id="knitDark" width="40" height="34" patternUnits="userSpaceOnUse">
+      <path d="M0 17c5-14 15-14 20 0 5 14 15 14 20 0" fill="none" stroke="#f7f5f0" stroke-opacity="0.10" stroke-width="3"/>
+      <path d="M-20 34c5-14 15-14 20 0 5 14 15 14 20 0" fill="none" stroke="#f7f5f0" stroke-opacity="0.06" stroke-width="3"/>
+      <path d="M20 34c5-14 15-14 20 0" fill="none" stroke="#f7f5f0" stroke-opacity="0.06" stroke-width="3"/>
+    </pattern>
+
+    <linearGradient id="cloth" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#f7f5f0"/>
+      <stop offset="100%" stop-color="#d8d2c6"/>
+    </linearGradient>
+
+    <linearGradient id="clothAmber" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#e0a83f"/>
+      <stop offset="100%" stop-color="#a3741c"/>
     </linearGradient>
   </defs>
-  <rect width="1600" height="1000" fill="url(#fade)"/>
-  <rect width="1600" height="1000" fill="url(#knit)"/>
-  <rect x="16" y="16" width="1568" height="968" fill="none" stroke="#F5F2EC" stroke-opacity="0.25" stroke-width="2"/>
-  <text x="50%" y="50%" fill="#F5F2EC" fill-opacity="0.75" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="73" font-weight="600" text-anchor="middle" dominant-baseline="middle">Factory floor / hero</text>
-  <text x="50%" y="581" fill="#F5F2EC" fill-opacity="0.45" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="40" text-anchor="middle" dominant-baseline="middle">1600 x 1000 &#183; replace with a real photo</text>
+
+  <!-- ground -->
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#knitDark)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <!-- swatch cards, back layer -->
+  <g opacity="0.9">
+    <rect x="90" y="470" width="240" height="300" rx="24" fill="#16304f" transform="rotate(-8 210 620)"/>
+    <rect x="90" y="470" width="240" height="300" rx="24" fill="url(#knitDark)" transform="rotate(-8 210 620)"/>
+    <rect x="1290" y="250" width="230" height="290" rx="24" fill="#16304f" transform="rotate(7 1405 395)"/>
+    <rect x="1290" y="250" width="230" height="290" rx="24" fill="url(#knitDark)" transform="rotate(7 1405 395)"/>
+  </g>
+
+  <!-- ==================== track pant (MSP Sports) ==================== -->
+  <g transform="translate(1130 420) rotate(6)">
+    <path d="M0 0h250l-8 120-30 400h-78l-14-330-16 330H8L-8 120Z"
+          fill="url(#clothAmber)"/>
+    <path d="M0 0h250l-8 120-30 400h-78l-14-330-16 330H8L-8 120Z"
+          fill="url(#knit)"/>
+    <!-- waistband -->
+    <rect x="-10" y="-34" width="270" height="52" rx="14" fill="#8a5f12"/>
+    <rect x="-10" y="-34" width="270" height="52" rx="14" fill="url(#knit)"/>
+    <!-- side stripe -->
+    <path d="M18 26 44 520" stroke="#f7f5f0" stroke-opacity="0.65" stroke-width="10" stroke-linecap="round"/>
+    <!-- cuffs -->
+    <rect x="112" y="500" width="82" height="34" rx="12" fill="#8a5f12"/>
+    <rect x="30" y="500" width="82" height="34" rx="12" fill="#8a5f12"/>
+  </g>
+
+  <!-- ==================== hoodie (ZONIXA), front layer ==================== -->
+  <g transform="translate(410 230)">
+    <!-- hood, behind the body and slightly wider than the shoulders -->
+    <path id="hood" d="M180 152C186 64 250 26 335 26s149 38 155 126z" fill="#cfc7b8"/>
+    <path d="M180 152C186 64 250 26 335 26s149 38 155 126z" fill="url(#knit)"/>
+
+    <!-- sleeves, tapering from the shoulder to the cuff -->
+    <g fill="url(#cloth)">
+      <path d="M190 152 96 196 44 430l84 32 68-162z"/>
+      <path d="M480 152l94 44 52 234-84 32-68-162z"/>
+    </g>
+    <g fill="url(#knit)">
+      <path d="M190 152 96 196 44 430l84 32 68-162z"/>
+      <path d="M480 152l94 44 52 234-84 32-68-162z"/>
+    </g>
+    <!-- cuffs -->
+    <g fill="#bdb5a5">
+      <path d="M44 430l84 32-10 34-84-32z"/>
+      <path d="M626 430l-84 32 10 34 84-32z"/>
+    </g>
+
+    <!-- body -->
+    <path d="M190 152h290l20 448a22 22 0 0 1-22 24H192a22 22 0 0 1-22-24z" fill="url(#cloth)"/>
+    <path d="M190 152h290l20 448a22 22 0 0 1-22 24H192a22 22 0 0 1-22-24z" fill="url(#knit)"/>
+
+    <!-- neck opening -->
+    <path d="M252 150q83 46 166 0-83 28-166 0z" fill="#6f6757" opacity="0.5"/>
+
+    <!-- drawcords -->
+    <path d="M300 170c-6 58-12 104-6 140" stroke="#8a5f12" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M372 170c7 54 13 98 8 132" stroke="#8a5f12" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <circle cx="294" cy="314" r="12" fill="#c8912b"/>
+    <circle cx="380" cy="306" r="12" fill="#c8912b"/>
+
+    <!-- kangaroo pocket -->
+    <path d="M226 392q109 22 218 0l12 118q-121 20-242 0z"
+          fill="none" stroke="#a89e8c" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- hem ribbing -->
+    <path d="M174 578h332" stroke="#a89e8c" stroke-width="6" opacity="0.65"/>
+    <path d="M176 600h328" stroke="#a89e8c" stroke-width="6" opacity="0.45"/>
+  </g>
+
+  <!-- loose thread, tying the composition together -->
+  <path d="M120 900c220-70 430 40 640-30s360-150 700-96"
+        fill="none" stroke="#c8912b" stroke-opacity="0.55" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="120" cy="900" r="12" fill="#c8912b" fill-opacity="0.85"/>
 </svg>
