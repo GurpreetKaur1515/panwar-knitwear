@@ -1,0 +1,14 @@
+# Keep web files LF everywhere so hosts and editors agree
+* text=auto eol=lf
+
+# Binary assets must never be line-ending converted
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.avif  binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
