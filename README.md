@@ -200,19 +200,38 @@ caption describing what the photo actually shows.
 
 ### Images
 
-Replace the files in `assets/images/` with real photographs, keeping the same filenames,
-and nothing else needs editing. Recommended sizes:
+```
+assets/images/
+├── products/     29 product photographs (800 × 934 JPEG) from panwarknitwear.com
+│                 + illus-*.svg — 5 drawings for the MSP bottom-wear styles
+├── site/         who-we-are.jpg, our-craftsmanship.jpg, our-leadership.jpg,
+│                 panwar-logo.png  (all from panwarknitwear.com)
+├── hero.svg      brand illustration on the home hero
+└── logo.svg / logo-light.svg   header and footer mark
+```
 
-| File | Size | Used on |
-| --- | --- | --- |
-| `hero.svg` | ~1600 × 1000 | Home hero |
-| `product-1…12.svg` | ~900 × 1125 (4:5) | Catalogue cards |
-| `gallery-1…9.svg` + `-thumb` | ~1200 × 900 / 600 × 450 | Gallery + lightbox |
-| `process-1…6.svg` | ~1000 × 750 | Manufacturing steps |
+The product photos were downloaded from the existing site and re-encoded at 800 px wide,
+JPEG quality 80 (8.3 MB → 3.6 MB, largest file 165 KB). To add or swap one, drop the file
+into `assets/images/products/` and point the matching `image:` field in
+`js/catalog.js` at it.
 
-If you switch to `.jpg` or `.webp`, update the `src` paths in the HTML (or in the
-`PRODUCTS` array for catalogue images). JPEG/WebP at 70–80% quality is recommended;
-keep each file under ~200 KB so pages stay fast.
+**What is still missing** — these could not be sourced because they do not exist on the
+current site:
+
+- **Photographs of the unit.** No knitting, dyeing, cutting, stitching, printing or
+  checking images anywhere on panwarknitwear.com. The six process steps on
+  `manufacturing.html` are therefore text-only, and the gallery shows product shots
+  rather than the floor.
+- **MSP Sports bottom wear.** The `msp-products.php` page serves the same ZONIXA
+  top-wear photos, so track pants, joggers, shorts, nikkar and capri keep illustrations.
+
+The five Unsplash photos the current site hot-links were **deliberately not used**: one is
+a watermarked Unsplash+ premium image, and two show other companies' branded goods
+(Balitello socks, nimble made shirts). Presenting those as Panwar production would be
+misleading, and the watermarked one is not licensed.
+
+If you switch a photo to `.webp`, update the `src` in the HTML or the `PRODUCTS` array.
+Keep each file under ~200 KB so pages stay fast.
 
 ### PDF catalogue
 
@@ -293,8 +312,10 @@ existing site. None of it should be published as-is. The list:
 | Products | `[Add MOQ]` on all 12 product cards |
 | Contact + footers | Real email address, street address, PIN code, working hours |
 | Contact — map | Google Maps embed link from your own business listing |
-| Products | Real product photos — the 12 cards currently use brand-style **illustrations**, not photographs of your make |
-| Gallery, Manufacturing, About | Real photographs in place of the generated placeholder images |
+| Products | `[Add MOQ]` on all 34 cards; photos for the 5 MSP bottom-wear styles |
+| Manufacturing | Photographs of the six process stages (currently text-only) |
+| Gallery | Factory-floor photographs, if you want the process shown alongside the product |
+| Logo | The current `panwar-logo.png` is a purple raster banner that clashes with the navy/amber palette, so the header still uses the site's own mark — supply a transparent vector logo to swap it in |
 | PDF | The real catalogue file |
 
 No certifications, capacity figures, client names or awards have been invented anywhere in
