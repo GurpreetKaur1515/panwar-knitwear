@@ -33,6 +33,12 @@ The site is live at **https://panwar-knitwear-eta.vercel.app**
 There is no build step — Vercel serves the files as they are. `vercel.json` sets cache
 headers for `/assets`, `/css` and `/js` plus two security headers.
 
+The cache policy is deliberately `max-age=0, must-revalidate, s-maxage=31536000`: Vercel's
+CDN holds the files (fast) and purges them on every deploy, while browsers always
+revalidate. That matters here because you replace images **keeping the same filename** —
+with a plain `max-age`, returning visitors would keep seeing the old photo for hours after
+you swapped it.
+
 To redeploy after editing content:
 
 ```bash
