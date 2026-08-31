@@ -1,0 +1,5 @@
+# Temporary: this deployment still contains placeholder copy and images.
+# DELETE THIS FILE (or replace the two lines below with "Allow: /") once the
+# real content is in and you want Google to index the site.
+User-agent: *
+Disallow: /
