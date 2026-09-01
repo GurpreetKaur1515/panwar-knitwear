@@ -6,6 +6,7 @@
      id       unique slug (used in the enquiry link)
      name     product name shown on the card
      brand    "ZONIXA" (top wear) or "MSP Sports" (bottom wear)
+              — add the key to CATEGORIES below if it is a new one
      category one of the CATEGORIES keys below
      fabric   fabric / construction note shown in the card footer
      moq      minimum order quantity — replace the placeholders with real figures
@@ -13,9 +14,14 @@
      alt      descriptive alt text for the product photo
      desc     one or two lines of description
 
-   Photographs come from panwarknitwear.com. The five MSP Sports bottom-wear
-   styles have no photography on the existing site, so they carry illustrations
-   (assets/images/products/illus-*.svg) until real photos are supplied.
+   Photographs come from panwarknitwear.com.
+
+   MSP SPORTS BOTTOM WEAR IS HIDDEN. Track pants, joggers, shorts, nikkar and
+   capri are not listed because no photographs of them exist yet. To bring them
+   back: add photos to assets/images/products/, re-add the two categories
+   { key: 'bottoms', label: 'Track pants & lowers' } and
+   { key: 'shorts',  label: 'Shorts & nikkar' } to CATEGORIES, and add the
+   product entries. The removed entries are in git history at commit 28c17f2.
    ========================================================================== */
 (function () {
   'use strict';
@@ -25,9 +31,7 @@
     { key: 'hoodies', label: 'Hoodies' },
     { key: 'sweatshirts', label: 'Sweatshirts' },
     { key: 'tshirts', label: 'T-shirts' },
-    { key: 'jackets', label: 'Jackets' },
-    { key: 'bottoms', label: 'Track pants & lowers' },
-    { key: 'shorts', label: 'Shorts & nikkar' }
+    { key: 'jackets', label: 'Jackets' }
   ];
 
   var PHOTO = 'assets/images/products/';
@@ -271,48 +275,6 @@
       image: PHOTO + 'bird-eye-cotton-half-baju-t-shirt.jpg',
       alt: 'Bird-eye cotton half baju t-shirt',
       desc: 'Breathable bird-eye cotton in a half baju cut.'
-    },
-
-    /* --------------------------------- MSP Sports bottom wear (drawings) */
-    {
-      id: 'track-pant',
-      name: 'Track pant',
-      brand: 'MSP Sports', category: 'bottoms', fabric: 'NS bonded / dry-fit', moq: '[Add MOQ]',
-      image: PHOTO + 'illus-track-pant.svg',
-      alt: 'Illustration of a straight-fit track pant in navy — photograph to follow',
-      desc: 'Straight-fit track pant with side pockets and elasticated waist with drawcord.'
-    },
-    {
-      id: 'jogger-lower',
-      name: 'Jogger lower',
-      brand: 'MSP Sports', category: 'bottoms', fabric: 'Spun fleece', moq: '[Add MOQ]',
-      image: PHOTO + 'illus-jogger-lower.svg',
-      alt: 'Illustration of a cuffed jogger lower in charcoal — photograph to follow',
-      desc: 'Cuffed jogger with a tapered leg — our most repeated bottom-wear style.'
-    },
-    {
-      id: 'sports-shorts',
-      name: 'Sports shorts',
-      brand: 'MSP Sports', category: 'shorts', fabric: 'Dry-fit polyester', moq: '[Add MOQ]',
-      image: PHOTO + 'illus-sports-shorts.svg',
-      alt: 'Illustration of dry-fit sports shorts in amber — photograph to follow',
-      desc: 'Lightweight breathable shorts for training, gym and summer teamwear.'
-    },
-    {
-      id: 'nikkar',
-      name: 'Nikkar',
-      brand: 'MSP Sports', category: 'shorts', fabric: 'Cotton / poly blend', moq: '[Add MOQ]',
-      image: PHOTO + 'illus-nikkar.svg',
-      alt: 'Illustration of a knee-length knitted nikkar in off-white — photograph to follow',
-      desc: 'Knee-length knitted shorts for domestic wholesale and value retail lines.'
-    },
-    {
-      id: 'capri',
-      name: 'Capri',
-      brand: 'MSP Sports', category: 'bottoms', fabric: 'Cotton lycra', moq: '[Add MOQ]',
-      image: PHOTO + 'illus-capri.svg',
-      alt: 'Illustration of a three-quarter length capri in navy — photograph to follow',
-      desc: 'Three-quarter length bottom with a comfortable stretch waistband.'
     }
   ];
 

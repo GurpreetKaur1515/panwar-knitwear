@@ -203,7 +203,6 @@ caption describing what the photo actually shows.
 ```
 assets/images/
 ├── products/     29 product photographs (800 × 934 JPEG) from panwarknitwear.com
-│                 + illus-*.svg — 5 drawings for the MSP bottom-wear styles
 ├── site/         who-we-are.jpg, our-craftsmanship.jpg, our-leadership.jpg,
 │                 panwar-logo.png  (all from panwarknitwear.com)
 ├── hero.svg      brand illustration on the home hero
@@ -222,8 +221,13 @@ current site:
   checking images anywhere on panwarknitwear.com. The six process steps on
   `manufacturing.html` are therefore text-only, and the gallery shows product shots
   rather than the floor.
-- **MSP Sports bottom wear.** The `msp-products.php` page serves the same ZONIXA
-  top-wear photos, so track pants, joggers, shorts, nikkar and capri keep illustrations.
+- **MSP Sports bottom wear.** Track pants, joggers, shorts, nikkar and capri are
+  **not listed** — `msp-products.php` serves the same ZONIXA top-wear photos, the MSP
+  product page is an unfinished Lorem ipsum template, and `mspsports.in` has an expired
+  SSL certificate. Send photos and they go back in: the entries and the two categories
+  are in git history at commit `28c17f2`, and `js/catalog.js` explains how to restore
+  them. Buyers can still enquire about bottom wear — it remains in the inquiry form's
+  product list and is linked from the home page and the catalogue intro.
 
 The five Unsplash photos the current site hot-links were **deliberately not used**: one is
 a watermarked Unsplash+ premium image, and two show other companies' branded goods
@@ -312,7 +316,7 @@ existing site. None of it should be published as-is. The list:
 | Products | `[Add MOQ]` on all 12 product cards |
 | Contact + footers | Real email address, street address, PIN code, working hours |
 | Contact — map | Google Maps embed link from your own business listing |
-| Products | `[Add MOQ]` on all 34 cards; photos for the 5 MSP bottom-wear styles |
+| Products | `[Add MOQ]` on all 29 cards; photos for the 5 hidden MSP bottom-wear styles |
 | Manufacturing | Photographs of the six process stages (currently text-only) |
 | Gallery | Factory-floor photographs, if you want the process shown alongside the product |
 | Logo | The current `panwar-logo.png` is a purple raster banner that clashes with the navy/amber palette, so the header still uses the site's own mark — supply a transparent vector logo to swap it in |
